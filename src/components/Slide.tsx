@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 
@@ -27,8 +28,17 @@ const Slide:React.FC<propsType> = ({img, title, mainTitle, price}) => {
     Shop Now
 </div>
         </div>
+
+        <Image
+         className="w-[100%] h-[300px] md:h-auto rounded-xl object-cover object-right md:object-left-bottom"
+        src={img}
+        alt="benner"
+        width={2000}
+        height={2000}
+         /> 
           </div>
     );     
 };
 
 export default Slide;
+   

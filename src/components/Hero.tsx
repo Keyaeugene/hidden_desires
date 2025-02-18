@@ -21,7 +21,7 @@ const slideData = [
         img: "/shop i.jpg",
         title: "Trending Items",
         mainTitle: "LATEST ITEM SALE",
-        price: "ksh 5000",
+        price: "ksh 600",
     },
      { 
         id: 1,
