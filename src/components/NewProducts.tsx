@@ -118,7 +118,7 @@ const productsData =[
     img: "/wand2.jpg",
     title: "Women",
     description: "USB Rechargeable G-spot Clit Vibrator Dildo Massager Magic Wand Waterproof",
-    rating: 2,
+    rating: 3 ,
     price: "ksh 1,599",
 },
 ];
