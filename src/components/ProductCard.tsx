@@ -84,8 +84,8 @@ const ProductCard: React.FC<propsType> = (
                 <Image
                 className="w-full h-auto"
                 src={img}
-                width={200}
-                height={300}
+                width={150}
+                height={225}
                 alt={title}
                 />
             </div>
@@ -96,9 +96,9 @@ const ProductCard: React.FC<propsType> = (
                 <div>{generateRating(rating)}</div>
 
                 <div className="font-bold flex gap-4"> 
-                    {price}  {/* Displays original string, e.g., "ksh 1,300" */}
+                    {price}  
                     <del className='text-gray-500 font-normal'> 
-                        Ksh {(numericPrice + 800)}.00  {/* Calculated original price */}
+                        Ksh {(numericPrice + 800)}.00  
                     </del>
                 </div>
 

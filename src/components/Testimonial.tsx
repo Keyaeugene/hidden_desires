@@ -26,7 +26,7 @@ const Testimonial = () => {
                             alt="quotes"
                             />
                             <p className="max-w-[200px] text-gray-500 text-sm"> 
-                                Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor dolor sit amet.
+                                At Hidden Desires, our mission is to help you explore and fulfill your deepest desires through premium products and personalized experiences, ensuring satisfaction and discretion.
                             </p>
 
                         </div>
