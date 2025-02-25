@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { BiUser } from "react-icons/bi";
 import { FiHeart } from "react-icons/fi";
 import { HiOutlineShoppingBag } from "react-icons/hi";
+import Image from 'next/image';
 
 const HeaderMain = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -34,7 +35,14 @@ const HeaderMain = () => {
     <div className="border-b border-gray-200 py-4">
       <div className="container sm:flex justify-between items-center">
         <div className="pb-4 sm:pb-0 text-center">
-          <img src="/Hidden Desires.jpg" alt="Hidden Desires Logo" className="h-[74px] w-auto" />
+          <Image
+          src="/Hidden Desires.jpg"
+           alt="Hidden Desires Logo"
+           width={100}
+           height={74}
+            className="h-[74px] w-auto"
+            priority
+            />
         </div>
         <div className="hidden lg:block">
           <div className="container">

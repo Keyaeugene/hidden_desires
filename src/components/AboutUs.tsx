@@ -98,8 +98,7 @@ const AboutUs = () => {
                             <div className="animate-fade-in">
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
                                 <p className="text-gray-600 leading-relaxed">
-                                    At Hidden Desires, our mission is to help you explore and fulfill your deepest desires through premium products and personalized experiences, ensuring satisfaction and discretion.
-                                </p>
+                                    At Hidden Desires, our mission is to help you explore and fulfill your deepest desires through premium products and personalized experiences, ensuring satisfaction and discretion.                        </p>
                             </div>
                         )}
 
@@ -107,7 +106,7 @@ const AboutUs = () => {
                             <div className="animate-fade-in">
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
                                 <p className="text-gray-600 leading-relaxed">
-                                    To become the world's leading destination for unique, high-quality products and services that unlock and celebrate individual desires with innovation and trust.
+                                    To become the worlds leading destination for unique, high-quality products and services that unlock and celebrate individual desires with innovation and trust.
                                 </p>
                             </div>
                         )}
