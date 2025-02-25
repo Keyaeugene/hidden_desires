@@ -19,16 +19,16 @@ const slideData = [
     { 
         id: 0,
         img: "/shop i.jpg",
-        title: "Trending Items",
+        title: "Discover your Pleasure",
         mainTitle: "LATEST ITEM SALE",
-        price: "ksh 800",
+        price: "ksh 600",
     },
      { 
         id: 1,
         img: "/pic2.jpg",
-        title: "Trending Items",
+        title: "Discover your Pleasure",
         mainTitle: "LATEST ITEM SALE",
-        price: "ksh 5000",
+        price: "ksh 600",
     },
 ];
 

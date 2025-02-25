@@ -22,8 +22,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hidden Desires",
-  description: "Your premier destination for unique and fulfilling experiences.",
+  title: "Hidden Desires | Premium Products & Experiences",
+  description: "Your premier destination for unique and fulfilling experiences. Explore our premium collection to satisfy your hidden desires.",
+  keywords: ["premium products", "hidden desires", "unique experiences", "quality products"],
+  authors: [{ name: "Hidden Desires Team" }],
+  
+  openGraph: {
+    title: "Hidden Desires | Premium Products & Experiences",
+    description: "Your premier destination for unique and fulfilling experiences.",
+    
+    type: "website",
+  },
+ 
 };
 
 export default function RootLayout({
