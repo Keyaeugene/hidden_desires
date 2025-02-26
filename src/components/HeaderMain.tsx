@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { BiUser } from "react-icons/bi";
-import { FiHeart } from "react-icons/fi";
+import { FiPhone } from "react-icons/fi";
 import { HiOutlineShoppingBag } from "react-icons/hi";
-import Image from 'next/image';
+import Image from "next/image";
 
 const HeaderMain = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -23,68 +23,83 @@ const HeaderMain = () => {
     setIsPopupOpen(!isPopupOpen);
   };
 
-  // Function to scroll to a specific section with proper typing
   const scrollToSection = (sectionId: string): void => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <div className="border-b border-gray-200 py-4">
+    <div className="border-b border-gray-200 py-4 relative">
+      {/* Header Content */}
       <div className="container sm:flex justify-between items-center">
         <div className="pb-4 sm:pb-0 text-center">
           <Image
-          src="/Hidden Desires.jpg"
-           alt="Hidden Desires Logo"
-           width={100}
-           height={74}
+            src="/Hidden Desires.jpg"
+            alt="Hidden Desires Logo"
+            width={100}
+            height={74}
             className="h-[74px] w-auto"
             priority
-            />
+          />
         </div>
         <div className="hidden lg:block">
           <div className="container">
             <div className="flex w-fit gap-10 mx-auto font-medium py-2 text-blackish">
-              <button 
-                className="navbar__link relative text-[18px]" 
-                onClick={() => scrollToSection('hero')}
+              <button
+                className="navbar__link relative text-[18px]"
+                onClick={() => scrollToSection("hero")}
               >
                 Home
               </button>
-              <button 
-                className="navbar__link relative text-[18px]" 
-                onClick={() => scrollToSection('about-us')}
+              <button
+                className="navbar__link relative text-[18px]"
+                onClick={() => scrollToSection("about-us")}
               >
                 About Us
               </button>
-              <button 
-                className="navbar__link relative text-[18px]" 
+              <button
+                className="navbar__link relative text-[18px]"
                 onClick={togglePopup}
               >
                 Contacts
               </button>
-              <button 
-                className="navbar__link relative text-[18px]" 
-                onClick={() => scrollToSection('new-products')}
+              <button
+                className="navbar__link relative text-[18px]"
+                onClick={() => scrollToSection("new-products")}
               >
                 Products
               </button>
             </div>
           </div>
         </div>
+
+        {/* Icons for Large Screens */}
         <div className="hidden lg:flex gap-2 text-gray-500 text-[30px]">
           <BiUser />
           <div className="relative">
-            <FiHeart />
-            <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[14px] h-[14px] text-[10px] text-white grid place-items-center translate-x-1 -translate-y-1">
-              0
-            </div>
+            <FiPhone className="cursor-pointer" onClick={callNumber} />
           </div>
           <div className="relative">
             <HiOutlineShoppingBag />
             <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[14px] h-[14px] text-[10px] text-white grid place-items-center translate-x-1 -translate-y-1">
+              0
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Icons for Mobile Screens (Fixed Bottom) */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 py-2 z-50">
+        <div className="container flex justify-around items-center text-gray-500 text-[24px]">
+          <BiUser />
+          <div className="relative">
+            <FiPhone className="cursor-pointer" onClick={callNumber} />
+          </div>
+          <div className="relative">
+            <HiOutlineShoppingBag />
+            <div className="bg-red-600 rounded-full absolute top-0 right-0 w-[12px] h-[12px] text-[8px] text-white grid place-items-center translate-x-1 -translate-y-1">
               0
             </div>
           </div>
